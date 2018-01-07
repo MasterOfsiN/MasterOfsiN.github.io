@@ -1,13 +1,107 @@
 body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
     background-image: url(../img/MisfitsBody.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+    font-family: Mistral, cursive;
+    background-position-y: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 60px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    transform: rotate(-45deg);
+    font-weight: bold;
+    background: 0;
+}
+
+input {
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+
+#login {
+    width: 320px;
+    float: right;
+}
+
+#login form {
+    margin: auto;
+    padding: 22px 22px 22px 22px;
+    width: 100%;
+    border-radius: 10%;
+    background: #282e33;
+    border-top: 3px solid #434a52;
+    border-bottom: 3px solid #434a52;
+}
+
+#login form input[type="text"] {
+    background-color: #3b4148;
+    border-radius: 10%;
+    color: #a9a9a9;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 50px;
+}
+
+#login form input[type="password"] {
+    background-color: #3b4148;
+    border-radius: 10%;
+    color: #a9a9a9;
+    margin-bottom: 5px;
+    width: 90%;
+    height: 50px;
+}
+
+#login form input[type="submit"] {
+    background: #b5cd60;
+    border: 0;
+    width: 90%;
+    height: 40px;
+    border-radius: 3%;
+    color: darkgrey;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#login form input[type="submit"]:hover {
+    background: #16aa56;
+}
+
+.youtube::after {
+    content: "c ";
+    font-family: "untitled-font-1";
+    font-size: 40px;
+    float: left;
+    color: red;
+}
+
+.vk::after {
+    content: "b ";
+    font-family: "untitled-font-1";
+    font-size: 40px;
+    float: left;
+    color: blue;
+}
+
+.fb::after {
+    content: "a ";
+    font-family: "untitled-font-1";
+    font-size: 40px;
+    float: left;
+    color: blue;
 }
 
 .conteiner {
     width: 100%;
-
 }
 
 .menu {
@@ -17,9 +111,11 @@ body {
     justify-content: space-around;
     width: 100%;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 30px;
+    letter-spacing: 3px;
     font-weight: bold;
     margin: 50px 0;
+    padding-left: 0;
 }
 
 li {
@@ -32,27 +128,131 @@ a {
     text-decoration: none;
 }
 
-iframe {
+.treiler {
     display: block;
     margin: 0 auto;
-    width: 100%;
+    width: 65%;
     height: 400px;
 }
 
 p {
+    text-shadow: 4px 12px 3px rgba(129, 133, 152, 0.7);
     background-color: rgba(249, 201, 16, 0.55);
-    margin: 20px 10%;
+    margin: 20px 15%;
     text-align: center;
-    font-size: 16px;
-    font-family: cursive;
-    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 h1 {
-    font-size: 44px;
+    text-shadow: 4px 12px 3px rgba(129, 133, 152, 1);
+    font-size: 54px;
     letter-spacing: 5px;
-    color: blue;
+    color: black;
     text-align: center;
-    font-family: fantasy;
-
+}
+.heroes {
+    list-style-type: none;
+    background-color: black;
+    opacity: 0.7;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+a:hover {
+    color: orange;
+}
+.nathan {
+    margin: 0 auto;
+    width: 35vw;
+    height: 28vw;
+    background-image: url(../img/nathan.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.rudy {
+    margin: 0 auto;
+    width: 35vw;
+    height: 20vw;
+    background-image: url(../img/rudy.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.curtis {
+    margin: 0 auto;
+    width: 35vw;
+    height: 20vw;
+    background-image: url(../img/curtis.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.alisha {
+    margin: 0 auto;
+    width: 35vw;
+    height: 20vw;
+    background-image: url(../img/alisha.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.kelly {
+    margin: 0 auto;
+    width: 35vw;
+    height: 33vw;
+    background-image: url(../img/kelly.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.saimon {
+    margin: 0 auto;
+    width: 35vw;
+    height: 35vw;
+    background-image: url(../img/saimon.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.jess {
+    margin: 0 auto;
+    width: 35vw;
+    height: 20vw;
+    background-image: url(../img/jess.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fin {
+    margin: 0 auto;
+    width: 35vw;
+    height: 20vw;
+    background-image: url(../img/fin.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.alex {
+    margin: 0 auto;
+    width: 35vw;
+    height: 24vw;
+    background-image: url(../img/alex.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.abbey {
+    margin: 0 auto;
+    width: 35vw;
+    height: 20vw;
+    background-image: url(../img/abbey.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.column {
+    width: 100%;
+    clear: both;
+}
+strong {
+    font-size: 22px;
+}
+.aboutactors {
+    text-shadow: 4px 12px 3px rgba(129, 133, 152, 0.7);
+    background-color: rgba(249, 201, 16, 0.55);
+    font-size: 16px;
+    letter-spacing: 1px;
 }
