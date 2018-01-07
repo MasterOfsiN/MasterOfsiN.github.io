@@ -8,7 +8,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/misfits.css" type="text/css" />
     <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
-
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='assets/unitegallery/js/unitegallery.min.js' type='text/javascript'></script>
+    <link href='assets/unitegallery/css/unite-gallery.css' rel='stylesheet' type='text/css' />
+    <script src='assets/unitegallery/themes/grid/ug-theme-grid.js' type='text/javascript'></script>
 </head>
 
 <body>
@@ -26,11 +29,34 @@
                 <li><a href="https://preview.c9users.io/kirill91/graduate/misfits.html">На главную</a></li>
                 <li><a href="https://preview.c9users.io/kirill91/graduate/video.html">Смотреть онлайн</a></li>
                 <li><a href="https://preview.c9users.io/kirill91/graduate/foto.html">Фото</a></li>
-                <li><a href="https://preview.c9users.io/kirill91/graduate/actors.html">Актеры</a></li>
+                <li><a href="https://preview.c9users.io/kirill91/graduate/actors.html">Герои</a></li>
             </ul>
-        
+            <div id="gallery">
+                <img src="assets/img/foto1.jpeg"></img>
+                <img src="assets/img/foto2.jpeg"></img>
+                <img src="assets/img/foto3.jpg"></img>
+                <img src="assets/img/foto4.jpg"></img>
+                <img src="assets/img/foto5.jpg"></img>
+                <img src="assets/img/foto6.jpg"></img>
+                <img src="assets/img/foto7.jpg"></img>
+                <img src="assets/img/foto8.jpg"></img>
+                <img src="assets/img/foto9.jpg"></img>
+                <img src="assets/img/foto10.jpg"></img>
+                <img src="assets/img/foto11.jpg"></img>
+                <img src="assets/img/foto12.jpg"></img>
+                <img src="assets/img/foto13.jpg"></img>
+                <img src="assets/img/foto14.jpg"></img>
+                <img src="assets/img/foto15.jpg"></img>
+                <img src="assets/img/foto16.jpg"></img>
+            </div>
+        </div>
     </content>
-
+    <script type="text/javascript">
+        jQuery("#gallery").unitegallery({
+            gallery_theme: "grid",
+            theme_panel_position: "right",
+        });
+    </script>
 </body>
 
 </html>
