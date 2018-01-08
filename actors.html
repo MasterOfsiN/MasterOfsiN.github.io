@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/misfits.css" type="text/css" />
     <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <li><a href="https://preview.c9users.io/kirill91/graduate/foto.html">Фото</a></li>
                 <li><a href="https://preview.c9users.io/kirill91/graduate/actors.html">Герои</a></li>
             </ul>
-            <ul class="heroes">
+            <ul id="menu" class="heroes">
                 <li><a href="#nathan">НЭЙТОН</a></li>
                 <li><a href="#rudy">РУДИ</a></li>
                 <li><a href="#curtis">КЁРТИС</a></li>
@@ -138,6 +138,16 @@
                 работы.Она алкашка,и была влюблена в черепаху по имени Марк,который стал человеком и его убила подружка Алекса.</p>
         </div>
     </content>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#menu").on("click", "a", function(event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({ scrollTop: top }, 1500);
+            });
+        });
+    </script>
 </body>
 
 </html>
