@@ -9,102 +9,6 @@ body {
     font-family: Mistral, cursive;
     background-position-y: 100%;
 }
-
-.logo {
-    position: absolute;
-    top: 60px;
-    margin: 0px;
-    padding: 0px;
-    font-size: 50px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    font-weight: bold;
-    background: 0;
-    color: black;
-}
-
-input {
-    border: none;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    padding: 0;
-}
-
-#login {
-    width: 320px;
-    float: right;
-}
-
-#login form {
-    margin: auto;
-    padding: 22px 22px 22px 22px;
-    width: 100%;
-    border-radius: 10%;
-    background: #282e33;
-    border-top: 3px solid #434a52;
-    border-bottom: 3px solid #434a52;
-}
-
-#login form input[type="text"] {
-    background-color: #3b4148;
-    border-radius: 10%;
-    color: #a9a9a9;
-    margin-bottom: 15px;
-    width: 90%;
-    height: 50px;
-}
-
-#login form input[type="password"] {
-    background-color: #3b4148;
-    border-radius: 10%;
-    color: #a9a9a9;
-    margin-bottom: 5px;
-    width: 90%;
-    height: 50px;
-}
-
-#login form input[type="submit"] {
-    background: #b5cd60;
-    border: 0;
-    width: 90%;
-    height: 40px;
-    border-radius: 3%;
-    color: darkgrey;
-    cursor: pointer;
-    -webkit-transition: background 0.3s ease-in-out;
-    -o-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
-}
-
-#login form input[type="submit"]:hover {
-    background: #16aa56;
-}
-
-.youtube::after {
-    content: "c ";
-    font-family: "untitled-font-1";
-    font-size: 3vw;
-    float: left;
-    color: red;
-}
-
-.vk::after {
-    content: "b ";
-    font-family: "untitled-font-1";
-    font-size: 3vw;
-    float: left;
-    color: blue;
-}
-
-.fb::after {
-    content: "a ";
-    font-family: "untitled-font-1";
-    font-size: 3vw;
-    float: left;
-    color: blue;
-}
-
 .conteiner {
     width: 100%;
 }
@@ -354,7 +258,7 @@ strong {
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 767px) {
     .menu {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -389,37 +293,29 @@ strong {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 600px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .conteiner,
     .menu {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        width: 767px;
+        margin: 20px auto;
     }
-    h1 {
-        font-size: 35px;
+} 
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .conteiner,
+    .menu {
+        width: 1024px;
+        margin: 20px auto;
     }
-    p {
-        margin: 0;
-        font-size: 16px;
-    }
-    ul {
-        margin: 0;
-    }
-    .scale {
-        -webkit-transition: none;
-        -o-transition: none;
-        transition: none;
-        -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
-    }
-    .scale:hover {
-        -webkit-transition: none;
-        -o-transition: none;
-        transition: none;
-        -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
+} 
+
+@media screen and (min-width: 1280px) {
+    .conteiner,
+    .menu {
+        width: 1280px;
+        margin: 20px auto;
     }
 }
+
+ 
+
