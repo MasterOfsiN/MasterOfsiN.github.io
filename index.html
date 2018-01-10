@@ -8,21 +8,16 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/misfits.css" type="text/css" />
     <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
-
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='assets/unitegallery/js/unitegallery.min.js' type='text/javascript'></script>
+    <link href='assets/unitegallery/css/unite-gallery.css' rel='stylesheet' type='text/css' />
+    <script src='assets/unitegallery/themes/slider/ug-theme-slider.js' type='text/javascript'></script>
 </head>
 
 <body>
     <header>
-        <p class="logo">MisFits</p>
-        <div id="login">
-            <form name='form-login'>
-                <span class="fontawesome-user"></span>
-                <input type="text" id="user" placeholder="Username">
-                <span class="fontawesome-lock"></span>
-                <input type="password" id "pass" placeholder="Password">
-                <input type="submit" value="Login">
-            </form>
-        </div>
+        <div><a class="logo" href="https://preview.c9users.io/kirill91/graduate/index.html">MisFits</a></div>
+        
         <div>
             <a class="fb" href="https://www.facebook.com/%D0%9E%D1%82%D0%B1%D1%80%D0%BE%D1%81%D1%8BMisFits-452425681776573/" target="black" title="fb"></a>
             <a class="vk" href="https://vk.com/otbrosy_net" title="vk" target="black"></a>
@@ -37,9 +32,15 @@
                 <li><a href="https://preview.c9users.io/kirill91/graduate/foto.html">Фото</a></li>
                 <li><a href="https://preview.c9users.io/kirill91/graduate/actors.html">Герои</a></li>
             </ul>
+            <div id="gallery">
+                <img src="assets/img/foto1.jpeg"></img>
+                <img src="assets/img/foto2.jpeg"></img>
+                <img src="assets/img/foto3.jpg"></img>
+            </div>
+            <br>
             <div><iframe class="treiler" src="https://www.youtube.com/embed/VsBYXLYNZlE?ecver=2" width="743" height="360" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
             <div class="scale">
-                <h1 >ОПИСАНИЕ</h1>
+                <h1>ОПИСАНИЕ</h1>
                 <p class="about">
                     Misfit &mdash; британский трагикомедийно-фантастический телесериал. Премьера состоялась 12 ноября 2009 года на канале E4. В России первый сезон был показан 30 и 31 октября 2010 года (по 3 серии в день) на MTV под названием &laquo;Плохие&raquo;. 29 октября
                     2011 года данный сериал показали на канале 2х2, приурочив показ сериала празднику Хэллоуин. Съёмки сериала проводились на юго-востоке Лондона, в основном в окрестностях озера Саутмир в округе Темсмид. Премьера второго сезона состоялась
@@ -58,7 +59,15 @@
             </div>
         </div>
     </content>
-
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery("#gallery").unitegallery({
+                gallery_theme: "slider",
+                gallery_play_interval: 7500,
+                slider_control_zoom: false,
+            });
+        });
+    </script>
 </body>
 
 </html>
